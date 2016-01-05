@@ -1,0 +1,16 @@
+{{#each messages}}
+<div class="alert alert-dismissible alert-success">
+    <button type="button" class="close" data-dismiss="alert">×</button>
+    {{this}}
+</div>
+{{/each}}
+
+<div class="page-header">
+    <h1>Felvitt receptek</h1>
+</div>
+
+{{recipe-list recipes=model}}
+
+<p>{{link-to "Új recept felvitele" "recipes.list.new" class="btn btn-default"}}</p>
+
+{{outlet}}

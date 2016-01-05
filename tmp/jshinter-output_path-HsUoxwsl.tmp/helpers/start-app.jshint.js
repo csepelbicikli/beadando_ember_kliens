@@ -1,0 +1,1 @@
+/home/ubuntu/workspace/client1/tmp/jshinter-cache_path-Hhm9lRkT.tmp/helpers/start-app.jshint.js

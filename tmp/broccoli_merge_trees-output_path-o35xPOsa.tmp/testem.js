@@ -1,0 +1,1 @@
+/home/ubuntu/workspace/client1/node_modules/ember-cli/lib/broccoli/testem.js

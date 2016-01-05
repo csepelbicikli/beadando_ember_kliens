@@ -1,0 +1,1 @@
+/home/ubuntu/workspace/client1/tmp/funnel-input_base_path-155mOr0G.tmp/0/app.js

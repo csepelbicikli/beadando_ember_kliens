@@ -1,0 +1,185 @@
+export default Ember.HTMLBars.template((function() {
+  return {
+    meta: {
+      "revision": "Ember@1.13.7",
+      "loc": {
+        "source": null,
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 44,
+          "column": 0
+        }
+      },
+      "moduleName": "client1/pods/errors/template.hbs"
+    },
+    arity: 0,
+    cachedFragment: null,
+    hasRendered: false,
+    buildFragment: function buildFragment(dom) {
+      var el0 = dom.createDocumentFragment();
+      var el1 = dom.createElement("div");
+      dom.setAttribute(el1,"class","page-header");
+      var el2 = dom.createTextNode("\n    ");
+      dom.appendChild(el1, el2);
+      var el2 = dom.createElement("h1");
+      var el3 = dom.createTextNode("Bejelentett hibáim");
+      dom.appendChild(el2, el3);
+      dom.appendChild(el1, el2);
+      var el2 = dom.createTextNode("\n");
+      dom.appendChild(el1, el2);
+      dom.appendChild(el0, el1);
+      var el1 = dom.createTextNode("\n\n");
+      dom.appendChild(el0, el1);
+      var el1 = dom.createElement("table");
+      dom.setAttribute(el1,"class","table table-striped table-hover ");
+      dom.setAttribute(el1,"id","errorTable");
+      var el2 = dom.createTextNode("\n    ");
+      dom.appendChild(el1, el2);
+      var el2 = dom.createElement("thead");
+      var el3 = dom.createTextNode("\n        ");
+      dom.appendChild(el2, el3);
+      var el3 = dom.createElement("tr");
+      var el4 = dom.createTextNode("\n            ");
+      dom.appendChild(el3, el4);
+      var el4 = dom.createElement("th");
+      var el5 = dom.createTextNode("Időpont");
+      dom.appendChild(el4, el5);
+      dom.appendChild(el3, el4);
+      var el4 = dom.createTextNode("\n            ");
+      dom.appendChild(el3, el4);
+      var el4 = dom.createElement("th");
+      var el5 = dom.createTextNode("Státusz");
+      dom.appendChild(el4, el5);
+      dom.appendChild(el3, el4);
+      var el4 = dom.createTextNode("\n            ");
+      dom.appendChild(el3, el4);
+      var el4 = dom.createElement("th");
+      var el5 = dom.createTextNode("Helyszín");
+      dom.appendChild(el4, el5);
+      dom.appendChild(el3, el4);
+      var el4 = dom.createTextNode("\n            ");
+      dom.appendChild(el3, el4);
+      var el4 = dom.createElement("th");
+      var el5 = dom.createTextNode("Leírás");
+      dom.appendChild(el4, el5);
+      dom.appendChild(el3, el4);
+      var el4 = dom.createTextNode("\n            ");
+      dom.appendChild(el3, el4);
+      var el4 = dom.createElement("th");
+      dom.setAttribute(el4,"data-override","Funkció");
+      dom.appendChild(el3, el4);
+      var el4 = dom.createTextNode("\n        ");
+      dom.appendChild(el3, el4);
+      dom.appendChild(el2, el3);
+      var el3 = dom.createTextNode("   \n    ");
+      dom.appendChild(el2, el3);
+      dom.appendChild(el1, el2);
+      var el2 = dom.createTextNode("\n    ");
+      dom.appendChild(el1, el2);
+      var el2 = dom.createElement("tbody");
+      var el3 = dom.createTextNode("\n");
+      dom.appendChild(el2, el3);
+      var el3 = dom.createTextNode("        ");
+      dom.appendChild(el2, el3);
+      var el3 = dom.createElement("tr");
+      var el4 = dom.createTextNode("\n            ");
+      dom.appendChild(el3, el4);
+      var el4 = dom.createElement("td");
+      var el5 = dom.createTextNode("22222");
+      dom.appendChild(el4, el5);
+      dom.appendChild(el3, el4);
+      var el4 = dom.createTextNode("\n            ");
+      dom.appendChild(el3, el4);
+      var el4 = dom.createElement("td");
+      var el5 = dom.createElement("span");
+      dom.setAttribute(el5,"class","label label-danger");
+      var el6 = dom.createTextNode("Új");
+      dom.appendChild(el5, el6);
+      dom.appendChild(el4, el5);
+      dom.appendChild(el3, el4);
+      var el4 = dom.createTextNode("\n            ");
+      dom.appendChild(el3, el4);
+      var el4 = dom.createElement("td");
+      var el5 = dom.createTextNode("PC9");
+      dom.appendChild(el4, el5);
+      dom.appendChild(el3, el4);
+      var el4 = dom.createTextNode("\n            ");
+      dom.appendChild(el3, el4);
+      var el4 = dom.createElement("td");
+      var el5 = dom.createElement("span");
+      dom.setAttribute(el5,"class","badge");
+      var el6 = dom.createTextNode("2");
+      dom.appendChild(el5, el6);
+      dom.appendChild(el4, el5);
+      var el5 = dom.createTextNode(" Rossz billentyűzet");
+      dom.appendChild(el4, el5);
+      dom.appendChild(el3, el4);
+      var el4 = dom.createTextNode("\n            ");
+      dom.appendChild(el3, el4);
+      var el4 = dom.createElement("td");
+      var el5 = dom.createTextNode("\n                ");
+      dom.appendChild(el4, el5);
+      var el5 = dom.createElement("a");
+      dom.setAttribute(el5,"class","btn btn-default btn-sm");
+      dom.setAttribute(el5,"role","button");
+      var el6 = dom.createTextNode("Megtekint");
+      dom.appendChild(el5, el6);
+      dom.appendChild(el4, el5);
+      var el5 = dom.createTextNode("\n                ");
+      dom.appendChild(el4, el5);
+      var el5 = dom.createElement("a");
+      dom.setAttribute(el5,"class","btn btn-danger btn-sm");
+      dom.setAttribute(el5,"role","button");
+      var el6 = dom.createTextNode("Törlés");
+      dom.appendChild(el5, el6);
+      dom.appendChild(el4, el5);
+      var el5 = dom.createTextNode("\n            ");
+      dom.appendChild(el4, el5);
+      dom.appendChild(el3, el4);
+      var el4 = dom.createTextNode("\n        ");
+      dom.appendChild(el3, el4);
+      dom.appendChild(el2, el3);
+      var el3 = dom.createTextNode("\n    ");
+      dom.appendChild(el2, el3);
+      dom.appendChild(el1, el2);
+      var el2 = dom.createTextNode("\n");
+      dom.appendChild(el1, el2);
+      dom.appendChild(el0, el1);
+      var el1 = dom.createTextNode("\n\n");
+      dom.appendChild(el0, el1);
+      var el1 = dom.createElement("p");
+      var el2 = dom.createComment("");
+      dom.appendChild(el1, el2);
+      dom.appendChild(el0, el1);
+      var el1 = dom.createTextNode("\n\n");
+      dom.appendChild(el0, el1);
+      var el1 = dom.createComment("");
+      dom.appendChild(el0, el1);
+      var el1 = dom.createTextNode("\n");
+      dom.appendChild(el0, el1);
+      return el0;
+    },
+    buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
+      var element0 = dom.childAt(fragment, [2, 3, 2, 9]);
+      var element1 = dom.childAt(element0, [1]);
+      var element2 = dom.childAt(element0, [3]);
+      var morphs = new Array(4);
+      morphs[0] = dom.createAttrMorph(element1, 'href');
+      morphs[1] = dom.createAttrMorph(element2, 'href');
+      morphs[2] = dom.createMorphAt(dom.childAt(fragment, [4]),0,0);
+      morphs[3] = dom.createMorphAt(fragment,6,6,contextualElement);
+      return morphs;
+    },
+    statements: [
+      ["attribute","href",["concat",["/errors/",["get","id",["loc",[null,[34,66],[34,68]]]]]]],
+      ["attribute","href",["concat",["/errors/delete/",["get","id",["loc",[null,[35,72],[35,74]]]]]]],
+      ["inline","link-to",["Új hiba felvitele","errors.new"],["class","btn btn-default new-error"],["loc",[null,[41,3],[41,81]]]],
+      ["content","outlet",["loc",[null,[43,0],[43,10]]]]
+    ],
+    locals: [],
+    templates: []
+  };
+}()));

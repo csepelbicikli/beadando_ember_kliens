@@ -1,0 +1,1 @@
+/home/ubuntu/workspace/client1/tmp/template_compiler-tmp_cache_dir-TJsYdKL6.tmp/0

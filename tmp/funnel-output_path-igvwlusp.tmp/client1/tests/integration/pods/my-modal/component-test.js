@@ -1,0 +1,1 @@
+/home/ubuntu/workspace/client1/tmp/babel-output_path-6KRvtWdr.tmp/client1/tests/integration/pods/my-modal/component-test.js

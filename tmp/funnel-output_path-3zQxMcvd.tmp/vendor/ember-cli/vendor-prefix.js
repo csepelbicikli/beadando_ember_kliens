@@ -1,0 +1,1 @@
+/home/ubuntu/workspace/client1/tmp/funnel-input_base_path-QdxXJ3rZ.tmp/0/vendor-prefix.js

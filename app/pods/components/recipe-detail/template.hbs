@@ -1,0 +1,18 @@
+<dl class="dl-horizontal">
+  <dt>id</dt>
+  <dd>{{recipe.id}}</dd>
+  <dt>Név</dt>
+  <dd>{{recipe.name}}</dd>
+  <dt>Hozzávalók</dt>
+  <dd>&nbsp;</dd>
+  <dd>{{alma}}</dd>
+  {{#each ings}}
+  <dd>{{name}} [{{link-to "Módosítás" "ingredients.edit" this}};<a {{action "deleteIngredient" this}}>Törlés</a>]</dd>
+  {{/each}}
+  <dt>Leírás</dt>
+  <dd>{{recipe.description}}</dd>
+  
+  
+</dl>
+{{link-to "Új hozzávaló" "ingredients.new" recipe.id}}
+{{link-to "Vissza" "recipes.list" class="btn btn-default"}}

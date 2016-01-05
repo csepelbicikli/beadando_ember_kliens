@@ -1,0 +1,1 @@
+/home/ubuntu/workspace/client1/tmp/jshinter-cache_path-frLA1jsW.tmp/pods/components/new-error-form/component.jshint.js

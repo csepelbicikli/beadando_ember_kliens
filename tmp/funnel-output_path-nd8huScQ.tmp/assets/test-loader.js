@@ -1,0 +1,1 @@
+/home/ubuntu/workspace/client1/tmp/funnel-input_base_path-lgYlC1Bq.tmp/0/bower_components/ember-cli-test-loader/test-loader.js
