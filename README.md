@@ -19,9 +19,13 @@
 		- normál felhasználó('normal'): a vendég szerepkörén túl tud saját recepteket megtekinteni, feltölteni, módosítani, törölni, ill. azokhoz hozzávalókat hozzáadni, mdosítani, törölni
 		- operátor('operator'): a normál felhasználó szerepkörén túl bármely felhasználó receptjét kezelheti, továbbá láthatja a felhasználók adatait, vmint törölhet is felhasználókat
 	2. Használati eset diagramok
+
 		![nincs_meg](docs/images/usecase.jpg)
+
 	3. Folyamatok pontos menete
+
 		![nincs_meg](docs/images/folyamat.jpg)
+
 
 
 ## Tervezés
@@ -29,7 +33,9 @@
 1. Architektúra terv
 	1. Komponensdiagram
 	2. Oldaltérkép
+
 		![nincs_meg](docs/images/oldalterkep.jpg)
+
 	3. Végpontok
 		- Nyitólap: `/`
 		- Receptek listázása: `/recipes/list`
@@ -42,12 +48,18 @@
 		- Új recept felvétele: `/recipes/new`
 2. Felhasználóifelület-modell
 	1. Oldalvázlatok
+	
 		![nincs_meg](docs/images/oldalterv_rc.jpg)
+
 3. Osztálymodell
 	1. Adatmodell
+
 		![nincs_meg](docs/images/adatmodell.jpg)
+
 	2. Adatbázisterv
+
 		![nincs_meg](docs/images/adatbterv.jpg)
+
 	3. Állapotdiagram
 
 
