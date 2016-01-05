@@ -3,11 +3,9 @@
 
 1. Követelmények összegyűjtése
 	1. Funkcionális elvárások
-		- Felhasználóként szeretnék felvinni egy étel elkészítési útmutatóját, ill. azt módsítani/ törölni --> Recept felvitele/ módosítása törlése
-		- Felhasználóként saját receptbe a hozzávalókat is bele szeretném rögzíteni, ill. azokat módostani törölni --> Hozzávalók rögzítése/ módosítása/ törlése
-		- Felhasználóként meg szeretném tekinteni saját receptjeimet --> Recept megtekintése
-		- Operátorként szeretném látni minden felhasználó összes receptjét, azokat módosíthatom v. törölhetem
-		- Operátorként láthatom az összes felhasználó adatjait (kivéve jelszó), felhasznalókat törölhetek
+		- Szeretnék felvinni egy étel elkészítési útmutatóját, ill. azt módsítani/ törölni --> Recept felvitele/ módosítása törlése
+		- Saját receptbe a hozzávalókat is bele szeretném rögzíteni, ill. azokat módostani törölni --> Hozzávalók rögzítése/ módosítása/ törlése
+		- Meg szeretném tekinteni saját receptjeimet --> Recept megtekintése
 	2. Nem funkcionális követelmények
 		- Felhasználóbarát, ergonomikus elrendezés és kinézet.
 		- Gyors működés.
@@ -34,29 +32,23 @@
 		![nincs_meg](docs/images/oldalterkep.jpg)
 	3. Végpontok
 		- Nyitólap: `/`
-		- Bejelentkezés: `/login`
-		- Regisztráció: `/login/signup`
-		- Kijelentkezés: `/logout`
 		- Receptek listázása: `/recipes/list`
 		- Recept megjelenítése: `/recipes/describe/:id`
-		- Hozzávaló hozzáadása: `/ingredients/new?id=:id`
+		- Hozzávaló hozzáadása: `/ingredients/new/:recipe_id`
 		- Hozzávaló módosítása: `/ingredients/modify/:id`
-		- Hozzávaló törlése: `/ingredients/delete/:id`
+		- Hozzávaló törlése: recept megjelenítésénél belső js controller függvény
 		- Recept módosítása: `/recipes/modify/:id`
-		- Recept törlése: `/recipes/delete/:id`
+		- Recept törlése: recept listázásánál belső js controller függvény
 		- Új recept felvétele: `/recipes/new`
-		- Operátori felület: `/operator`
-		- Felhasználó törlése: `/operator/delete/:id`
 2. Felhasználóifelület-modell
 	1. Oldalvázlatok
-		![nincs_meg](docs/images/oldalterv_op.jpg)
+		![nincs_meg](docs/images/oldalterv_rc.jpg)
 3. Osztálymodell
 	1. Adatmodell
 		![nincs_meg](docs/images/adatmodell.jpg)
 	2. Adatbázisterv
 		![nincs_meg](docs/images/adatbterv.jpg)
 	3. Állapotdiagram
-		![nincs_meg](docs/images/allapotdiagram.jpg)
 
 
 ## Implementáció
@@ -75,18 +67,15 @@
 ##Tesztelés
 
 1. Tesztelési környezet bemutatása
-	A teszteléhez mocha keretrendszert használtam(parancs: `mocha <tesztfájlnév> --timeout 12000`). A maximális késleltetést 15 másodpercre állítottam(`--timeout 12000`) a cloud9 szerver autentikáció terén tapasztalt lassúsága miatt.
+
 2. Egységtesztek
-	Az egységek (entity) közül a user-t teszteltem le a chai ellenőrzőkönyvtár segtségével mocha keretrendszerben. A kapcsolódó tesztfájl: `test/test1_usermodel.js`.
+
 3. Funkcionális felületi tesztek
-	Funkcionális felületi tesztek elvégzéséhez a zombie.js kereteit használtam. A kapcsolódó tesztfájl: `test/test2_zombie.js`
+
 4. Tesztesetek
-	- Az entity tesztelésénél kitértem a `user`, létrehozására helyes és helytelen adatokkal, módsítására, keresésére, jelszó ellenőrzésére helyes és helytelen példával.
 	- felületi tesztelés:
 		- nyitólap meglátogatása
 		- új recept készítése
-		- operátor oldal meglátogatása 
-			- ehhez szükséges a `.tmp/default.db` fájlban egy `kjozsi` nevű, `kjozsi` jelszavú felhasználó role-ját `operator`-ra átírni ill. egy `k`:`k` sima felhasználó
 		- új hozzávaló hozzáadása az előbbi példában készített recepthez
 
 
@@ -95,4 +84,4 @@
 1. A futtatáshoz ajánlott hardver-, szoftver konfiguráció
 	A futtatáshoz minimum 2GHz-es egymagos processzor, legalább 512 MB RAM és 1GB szabad tárhely ajánlott. A program használatához valamilyen Linux operációs rendszer disztribúció szükséges.
 2. Telepítés lépései és a program használata
-	A fájlokat a GitHub `Download Zip` opciója segítségével lehet letölteni ezután a saját szerverre kicsomagolással felrakható, majd a server.js futtatásával elindítható. Az esetleges függőségeket (dependency) a `npm install <fuggoseg> --save` paranccsal telepíthetjük.
+	A fájlokat a GitHub `Download Zip` opciója segítségével lehet letölteni ezután a saját szerverre kicsomagolással felrakható, majd a REST szerver a server.js futtatásával elindítható, mig az Ember.js kliens-oldali alkalmazás szervere az `ember server` parancs kiadásával indítható. Az esetleges függőségeket (dependency) a `npm install <fuggoseg> --save` paranccsal telepíthetjük.
