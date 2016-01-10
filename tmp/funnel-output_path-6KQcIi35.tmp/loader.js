@@ -1,0 +1,1 @@
+/home/ubuntu/workspace/tmp/funnel-input_base_path-GNcCuPOc.tmp/0/

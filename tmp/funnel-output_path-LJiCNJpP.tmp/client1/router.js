@@ -1,0 +1,1 @@
+/home/ubuntu/workspace/tmp/babel-output_path-DJSchRcB.tmp/client1/router.js

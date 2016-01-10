@@ -1,0 +1,1 @@
+/home/ubuntu/workspace/tmp/babel-output_path-N8TDP3jr.tmp/client1/tests/integration/pods/new-error-form/component-test.js

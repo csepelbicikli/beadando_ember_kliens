@@ -1,0 +1,1 @@
+/home/ubuntu/workspace/tmp/jshinter-output_path-JEUVDGTp.tmp/unit/routes/application-test.jshint.js

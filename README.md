@@ -15,9 +15,7 @@
 	- recipe: recept angolul
 3. Használatieset-modell
 	1. Szerepkörök
-		- vendég('guest'): a nyitóoldal tartalmához fér hozzá, mást nem tud
-		- normál felhasználó('normal'): a vendég szerepkörén túl tud saját recepteket megtekinteni, feltölteni, módosítani, törölni, ill. azokhoz hozzávalókat hozzáadni, mdosítani, törölni
-		- operátor('operator'): a normál felhasználó szerepkörén túl bármely felhasználó receptjét kezelheti, továbbá láthatja a felhasználók adatait, vmint törölhet is felhasználókat
+		- vendég('guest'):  tud saját recepteket megtekinteni, feltölteni, módosítani, törölni, ill. azokhoz hozzávalókat hozzáadni, módosítani, törölni
 	2. Használati eset diagramok
 
 		![nincs_meg](docs/images/usecase.jpg)
@@ -41,9 +39,9 @@
 		- Receptek listázása: `/recipes/list`
 		- Recept megjelenítése: `/recipes/describe/:id`
 		- Hozzávaló hozzáadása: `/ingredients/new/:recipe_id`
-		- Hozzávaló módosítása: `/ingredients/modify/:id`
+		- Hozzávaló módosítása: `/ingredients/edit/:id`
 		- Hozzávaló törlése: recept megjelenítésénél belső js controller függvény
-		- Recept módosítása: `/recipes/modify/:id`
+		- Recept módosítása: `/recipes/edit/:id`
 		- Recept törlése: recept listázásánál belső js controller függvény
 		- Új recept felvétele: `/recipes/new`
 2. Felhasználóifelület-modell
@@ -69,11 +67,13 @@
 	- A fejlesztéshez a Cloud9 webes felületét használtam, amely egy virtuális linux-alapú felületet biztosít annak minden hasznos eszközével (bash, fájlböngésző, színkiemeléses szövegszerkesztő), szerver tesztelésére saját ideiglenes domaint kínál, valamint fájlok feltöltésére  is lehetőséget ad. Többféle programozási nyelvet is támogat.
 2. Könyvtárstruktúrában lévő mappák funkiójának bemutatása
 	- A forrásfájlokat a következők szerint csoportosítottam
-		- Model - View (itt: handlebars) - Controller - struktúra (`models/ - views/ - controllers/`)
-		- `public/` könyvtár: statikus segédelemek (jelen esetben: Bootswatch css)
-		- `config/` könyvtár: waterline tárolási beállítások
-		- `test/` könyvtár: tesztelő szkriptek
-		- `node_modules/` könyvtár: node.js segédmodulok
+		- `app/` könyvtár: ember.js alkalmazás
+		- `app/application/` könyvtár: ember.js alkalmazás konfigurációja
+		- `app/components/` könyvtár: ember.js komponensek handlebars sablonok használatával
+		- `app/ingredient/` ill. `app/recipe/` könyvtár: modellek
+		- `app/ingredients/` ill. `app/recipes` könyvtár: modellekhez tartozó route-ok és controller-ek
+		- `app/index/` könyvtár: kezdőoldal sablonja
+		- `node_modules/`, `bower_components/` könyvtár: node.js segédmodulok (ember-cli, bootswatch)
 
 
 ##Tesztelés
@@ -89,6 +89,8 @@
 		- nyitólap meglátogatása
 		- új recept készítése
 		- új hozzávaló hozzáadása az előbbi példában készített recepthez
+		- hozzávaló módosítása
+		- hozzávaló eltávolítása
 
 
 ##Felhasználói dökumentáció

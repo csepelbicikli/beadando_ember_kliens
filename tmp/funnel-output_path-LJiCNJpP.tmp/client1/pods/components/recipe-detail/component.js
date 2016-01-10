@@ -1,0 +1,1 @@
+/home/ubuntu/workspace/tmp/babel-output_path-DJSchRcB.tmp/client1/pods/components/recipe-detail/component.js

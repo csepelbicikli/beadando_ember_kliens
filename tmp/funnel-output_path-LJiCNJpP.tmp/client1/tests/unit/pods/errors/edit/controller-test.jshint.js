@@ -1,0 +1,1 @@
+/home/ubuntu/workspace/tmp/jshinter-output_path-JEUVDGTp.tmp/unit/pods/errors/edit/controller-test.jshint.js

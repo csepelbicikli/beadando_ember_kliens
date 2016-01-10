@@ -9,7 +9,7 @@ export default Ember.Controller.extend({
             // ingerdient.set('name', properties.name);
             
             return ingredient.save().then(() => {
-                this.transitionToRoute('ingredients.list');
+                this.transitionToRoute('recipes.list');
             });
         }
     }

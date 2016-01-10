@@ -1,0 +1,1 @@
+/home/ubuntu/workspace/tmp/jshinter-output_path-JEUVDGTp.tmp/integration/pods/error-detail/component-test.jshint.js

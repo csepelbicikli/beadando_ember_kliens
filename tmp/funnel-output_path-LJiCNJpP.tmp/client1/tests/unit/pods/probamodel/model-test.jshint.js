@@ -1,0 +1,1 @@
+/home/ubuntu/workspace/tmp/jshinter-output_path-JEUVDGTp.tmp/unit/pods/probamodel/model-test.jshint.js

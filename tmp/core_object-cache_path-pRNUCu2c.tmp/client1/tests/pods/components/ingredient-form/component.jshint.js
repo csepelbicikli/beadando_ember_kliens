@@ -1,0 +1,10 @@
+define('client1/tests/pods/components/ingredient-form/component.jshint', function () {
+
+  'use strict';
+
+  describe('JSHint - pods/components/ingredient-form/component.js', function(){
+  it('should pass jshint', function() { 
+    expect(false, 'pods/components/ingredient-form/component.js should pass jshint.\npods/components/ingredient-form/component.js: line 1, col 1, \'import\' is only available in ES6 (use esnext option).\npods/components/ingredient-form/component.js: line 3, col 1, \'export\' is only available in ES6 (use esnext option).\npods/components/ingredient-form/component.js: line 16, col 9, \'concise methods\' is available in ES6 (use esnext option) or Mozilla JS extensions (use moz).\npods/components/ingredient-form/component.js: line 22, col 30, [\'onSave\'] is better written in dot notation.\npods/components/ingredient-form/component.js: line 26, col 9, \'concise methods\' is available in ES6 (use esnext option) or Mozilla JS extensions (use moz).\npods/components/ingredient-form/component.js: line 31, col 5, \'concise methods\' is available in ES6 (use esnext option) or Mozilla JS extensions (use moz).\n\n6 errors').to.be.ok; 
+  })});
+
+});

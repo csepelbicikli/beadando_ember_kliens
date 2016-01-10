@@ -1,0 +1,1 @@
+/home/ubuntu/workspace/tmp/broccoli_merge_trees-input_base_path-XKHVUJfX.tmp/6/client1/tests/helpers/resolver.jshint.js
